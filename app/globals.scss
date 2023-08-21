@@ -1,20 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-* {
-  padding: 0;
-  scroll-behavior: smooth;
+*{
+  padding: 0;scroll-behavior: smooth;
+ 
 }
-
-nav {
+nav{
   background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
 }
-
-body {
+body{
   background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
-  color: #F1F1F1;
+  color:#F1F1F1;
 }
 
-footer {
-  background-color: #282b2f;
-}/*# sourceMappingURL=globals.css.map */
+footer{background-color: #282b2f}
