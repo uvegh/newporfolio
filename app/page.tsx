@@ -19,7 +19,7 @@ export default function Home() {
     <>
     <main className=" md:max-lg:container mx-auto">
       <nav className="w-full dark:bg-gray-900 top-0 fixed mb-13 z-10">
-        <div className="w-[90%] flex flex-wrap  justify-between mx-auto p-4">
+        <div className="lg:w-[90%]md:w-[100%] sm:w-[100%] flex flex-wrap  justify-between mx-auto p-4">
           <button
             data-collapse-toggle="navbar-default"
             type="button"
