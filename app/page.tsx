@@ -10,6 +10,8 @@ import { AiFillGithub,AiOutlineMail } from "react-icons/ai";
 import { TbBrandTwitter } from "react-icons/tb";
 import {GrLocationPin} from "react-icons/gr"
 
+
+
 import { motion, AnimatePresence, useScroll } from "framer-motion";
 export default function Home() {
   const {scrollYProgress}=useScroll()
@@ -86,6 +88,16 @@ export default function Home() {
                   aria-current="page"
                 >
                   Contact
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="../public/cv.pdf"
+                  className="block pl-3 pr-4 text-slate-200 px-2 py-2  border-gray-200   dark:text-white md:dark:text-blue-500"
+                 target="_blank" 
+                >
+                  Resume
                 </Link>
               </li>
             </ul>
@@ -1725,7 +1737,7 @@ className="mt-10 mb-10"
         <h1 className="text-left font-bold text-2xl opacity-50">cONNECT wITH mE..</h1>
         </motion.div>
 
-<motion.main className="flex font-mono lg:flex-row text-2xl sm:flex-col justify-center  lg:gap-3"
+<motion.main className="flex font-mono lg:flex-row text-2xl sm:flex-col justify-center  gap-5"
 initial={{
   opacity:0,
   scale:0,
@@ -1741,20 +1753,95 @@ transition={{
   duration:0.3
 }}
 >
-  <div className="">
+  <motion.a  className="cursor-pointer"
+  initial={{
+    x:-100,
+    opacity:0
+  }}
+  whileInView={{
+    x:0,
+    opacity:1
+  }}
+  transition={{
+    duration:0.5,
+    delay:0.3
+  }}
+  whileHover={{
+    scale:1.3,
+    rotate:[5,-5,0]
+  }}
+  whileTap={{
+    scale:1.3,
+    rotate:[5,-5,0]
+  }}
+  animate={{
+    rotate:0
+  }}
+  >
     
 <FaPhone/>
-  </div>
+  </motion.a>
 
-<div>
+<motion.a
+initial={{
+  x:-100,
+  opacity:0
+}}
+whileInView={{
+  x:0,
+  opacity:1
+}}
+transition={{
+  duration:0.5,
+  delay:0.2
+}}
+whileHover={{
+  scale:1.3,
+  rotate:[5,-5,0]
+}}
+whileTap={{
+  scale:1.3,
+  rotate:[5,-5,0]
+}}
+
+animate={{
+  rotate:0
+}}
+className="cursor-pointer"
+>
  <FaEnvelope/>
 
-</div>
+</motion.a>
 
-<div>
+<motion.a
+initial={{
+  x:-100,
+  opacity:0
+}}
+whileInView={{
+  x:0,
+  opacity:1
+}}
+transition={{
+  duration:0.5,
+  delay:0.1
+}}
+whileHover={{
+  scale:1.3,
+  rotate:[5,-5,0]
+}}
+whileTap={{
+  scale:1.3,
+  rotate:[5,-5,0]
+}} 
+animate={{
+  rotate:0
+}}
+className="cursor-pointer"
+>
  <FaLinkedin/>
 
-</div>
+</motion.a>
 
 </motion.main>
 
