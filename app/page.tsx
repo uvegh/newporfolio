@@ -1808,6 +1808,8 @@ animate={{
   rotate:0
 }}
 className="cursor-pointer"
+target="blank"
+              href="uveghobamien@gmail.com"
 >
  <FaEnvelope/>
 
@@ -1838,6 +1840,8 @@ animate={{
   rotate:0
 }}
 className="cursor-pointer"
+target="blank"
+              href="https://www.linkedin.com/in/eghobamien-vincent-03a124211/"
 >
  <FaLinkedin/>
 
