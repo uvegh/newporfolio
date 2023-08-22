@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
     <main className=" md:max-lg:container mx-auto">
-      <nav className="w-full dark:bg-gray-900 top-0 fixed mb-13 z-10">
+      {/* <nav className="w-full dark:bg-gray-900 top-0 fixed mb-13 z-10">
         <div className="lg:w-[90%]md:w-[100%] sm:w-[100%] flex flex-wrap  justify-between mx-auto p-4">
           <button
             data-collapse-toggle="navbar-default"
@@ -118,10 +118,78 @@ export default function Home() {
 
         
     </motion.div>
-      </nav>
+      </nav> */}
+
+
+
+
+    <Navbar
+      fluid
+    className="w-full dark:bg-gray-900 top-0 fixed mb-13 z-10"
+    >
+      <div className="lg:w-[90%]md:w-[100%] sm:w-[100%] flex flex-wrap  justify-between mx-auto p-4">
+      <Navbar.Brand
+      
+        href=""
+      >
+       
+        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+          
+        </span>
+      </Navbar.Brand>
+
+      <Navbar.Toggle  />
+      <Navbar.Collapse >
+        <Navbar.Link
+          active
+          href="#services"
+        >
+          <p>
+            Services
+          </p>
+        </Navbar.Link>
+        <Navbar.Link href="#about"
+        >
+          <p>
+            About
+          </p>
+        </Navbar.Link>
+        <Navbar.Link href="#portfolio">
+          Portfolio
+        </Navbar.Link>
+      
+        <Navbar.Link href="#contact">
+          Contact
+        </Navbar.Link>
+
+        <Navbar.Link href="public/cv.pdf" target="_blank">
+          Resume
+        </Navbar.Link>
+      </Navbar.Collapse>
+      </div>
+     
+      <motion.div className="bg-blue left-0 fixed  bg-slate-400 p-0.5 sm:max-md:hidden"
+    style={{
+      scaleX:scrollYProgress,
+      transformOrigin:"0%",
+      position:"fixed",
+    top:"8%",
+      right:0,
+      left:0,
+      height:1
+       
+    }}
+    >
+
+        
+    </motion.div>
+    </Navbar>
+    
+
+
 
       
-      <section className="flex  sm:flex-col sm:gap-5 md:gap-5 md:flex-col lg:flex-row mt-6 justify-between lg:gap-5 sm:mx-auto sm:w-[90%] md:max-lg:w-[80%] md:mx-auto" id="about">
+      <section className="flex sm:mt-12  sm:flex-col sm:gap-5 md:gap-5 md:flex-col lg:flex-row mt-10 justify-between lg:gap-5 sm:mx-auto sm:w-[90%] md:max-lg:w-[80%] md:mx-auto" id="about">
         <motion.div
           initial={{
             x: -100,
@@ -1137,7 +1205,7 @@ className="mt-10 mb-10"
         }}
         className="grid  lg:grid-cols-3 md:grid-cols-1 text-slate-800  pb-10">
 
-<Link href="">  
+<Link href="https://main--calm-smakager-8b94b3.netlify.app/" target="_blank" >  
           <motion.section
             initial={{ opacity: 0, scale: 0, x: 100 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -1210,7 +1278,7 @@ className="mt-10 mb-10"
           </motion.section>
           </Link>
 
-          <Link href="">  
+          <Link href="https://centebestbuy-ui.netlify.app/" target="_blank">  
           <motion.section
             initial={{ opacity: 0, scale: 0, x: 100 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -1283,7 +1351,7 @@ className="mt-10 mb-10"
           </motion.section>
           </Link>
 
-          <Link href="">  
+          <Link href="https://centeblog.netlify.app/" target="_blank">  
           <motion.section
             initial={{ opacity: 0, scale: 0, x: 100 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -1360,7 +1428,7 @@ className="mt-10 mb-10"
           </motion.section>
           </Link>
 
-          <Link href=""> 
+          <Link href="https://gavohms.netlify.app/" target="_blank"> 
           <motion.section
             initial={{ opacity: 0, scale: 0, x: -100 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -1433,7 +1501,7 @@ className="mt-10 mb-10"
           </motion.section>
           </Link>
 
-          <Link href=""> 
+          <Link href="https://uvegh.github.io/mahabisUI/" target="_blank"> 
           <motion.section
             initial={{ opacity: 0, scale: 0, x: 100 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -1507,7 +1575,7 @@ className="mt-10 mb-10"
           </motion.section>
           </Link>
 
-          <Link href=""> 
+          <Link href="https://uvegh.github.io/SASSIHOLFORDUI/" target="_blank"> 
           <motion.section
             initial={{ opacity: 0, scale: 0, x: 100 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -1581,7 +1649,7 @@ className="mt-10 mb-10"
           </Link>
 
 
-          <Link href=""> 
+          <Link href="https://uvegh.github.io/BoltFood/" target="_blank"> 
           <motion.section
             initial={{ opacity: 0, scale: 0, x: 100 }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -1675,7 +1743,7 @@ className="mt-10 mb-10"
         <h1 className="text-left font-bold text-2xl opacity-50">wORK eXPERIENCE</h1>
         </motion.div>
 
-<motion.main className="flex font-mono lg:flex-row sm:flex-col  lg:gap-3"
+<motion.main className="flex font-mono lg:flex-row sm:flex-col  sm:max-md:gap-y-8 lg:gap-3"
 initial={{
   opacity:0,
   scale:0,
@@ -1700,7 +1768,7 @@ transition={{
 
 <div>
   <p className="font-bold text-xl">Full Stack Developer</p>
-  <p>
+  <p className="sm:max-md:text-lg">
 March 2021 -August 2023 </p>
 <p>Rework Technologies Ltd is an indigenous Software Development,Academy and consultancy firm, with specialty in custom software solutions, data analytics and pioneers for Solutions Delivery.</p>
 <p className="text-slate-700 flex"><GrLocationPin/> Fct-Abuja Nigeria</p>
@@ -1718,7 +1786,7 @@ March 2021 -August 2023 </p>
         
       </section>
 
-      <section className="sm:mx-auto sm:w-[90%] sm:gap-5 md:gap-5" id="contact">
+      <section className="sm:mx-auto sm:w-[90%] sm:gap-5 md:gap-5 " id="contact">
       <motion.div 
         initial={{x:-100,opacity:0}}
         transition={{delay:0.2,duration:0.5}}
@@ -1734,10 +1802,10 @@ March 2021 -August 2023 </p>
 className="mt-10 mb-10"
         >
         <p className="font-light text-left font-mono text-xl ">Contact </p>
-        <h1 className="text-left font-bold text-2xl opacity-50">cONNECT wITH mE..</h1>
+        <h1 className="text-left font-bold sm:max-md:text-xl text-2xl opacity-50">cONNECT wITH mE..</h1>
         </motion.div>
 
-<motion.main className="flex font-mono lg:flex-row text-2xl sm:flex-col justify-center  gap-5"
+<motion.main className="flex font-mono lg:flex-row text-2xl  sm:justify-center justify-center  gap-5"
 initial={{
   opacity:0,
   scale:0,
