@@ -372,7 +372,7 @@ export default function Home() {
           className="lg:w-1/2 lg:mx-auto"
         >
           <Image
-            src="/profile.jpg"
+            src="/profile2.png"
             alt="me "
             className="lg:w-[80%] sm:w-[100%] rounded-lg"
             width="500"
@@ -1204,6 +1204,159 @@ className="mt-10 mb-10"
           opacity:1
         }}
         className="grid  lg:grid-cols-3 md:grid-cols-1 text-slate-800  pb-10">
+
+
+{/* user */}
+
+<Link href="https://hygeia-omega.vercel.app/login" target="_blank" >  
+          <motion.section
+            initial={{ opacity: 0, scale: 0, x: 100 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              layout: {
+                type: "spring",
+              },
+              duration: 0.4,
+              delay:0.2
+              
+            }}
+
+            whileHover={{
+              scale: 1.1,
+              rotate: [5, -5, 5, 0],
+            }}
+            whileTap={{
+              scale: 1.1,
+              rotate: [5, -5, 5, 0],
+            }}
+            whileFocus={{
+              scale: 1.1,
+              rotate: [5, -5, 5, 0],
+            }}
+            animate={{
+              rotate: 0,
+            }}
+            className="p-4"
+          >
+            <div className="mt-5 ">
+              <motion.div
+               
+                transition={{
+                  layout: {
+                    type: "spring",
+                    duration: 0.5,
+                  },
+                }}
+                className=" cursor-pointer"
+              >
+                <Image className="lg:w-[100%] md:w-[100%] sm:w-[100%] rounded-t-md"
+                sizes="(min-width:768px) 80vw (min-width:200px)90vw  (min-width:1000px) 100vw"
+                alt="pf5" src="/pf8.png" width="500" height="200"/>
+               
+              </motion.div>
+
+             
+
+
+             <div className="bg-slate-200 rounded-b-md p-5 lg:min-h-[230px]">
+              <section className="">
+              <h1 className="font-bold "> Couch</h1>   
+          <p> 
+(Mental Wellness Site/Therapist Platform)</p>
+              </section>
+         
+
+             <h1 className="font-bold">Stack</h1>
+              <div className="flex flex-wrap font-mono font-light rounded-b-lg drop-shadow-xl  lg:justify-start md:justify-evenly sm:justify-start sm:gap-3   ">
+                
+               <p className="border-slate-700 rounded p-2 border-spacing-2 border"> Next js</p>
+               <p className="border-slate-700 rounded p-2 border-spacing-2 border"> Typescript </p>
+               <p className="border-slate-700 rounded p-2 border-spacing-2 border"> Tailwind</p>
+               <p className="border-slate-700 rounded p-2 border-spacing-2 border"> Material UI</p>
+               <p className="border-slate-700 rounded p-2 border-spacing-2 border"> Redux</p>
+              
+              </div>
+             </div>
+             
+            </div>
+          </motion.section>
+          </Link>
+
+          {/* therapist */}
+          <Link href="https://www.joincouch.co/landing" target="_blank" >  
+          <motion.section
+            initial={{ opacity: 0, scale: 0, x: 100 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              layout: {
+                type: "spring",
+              },
+              duration: 0.4,
+              delay:0.2
+              
+            }}
+
+            whileHover={{
+              scale: 1.1,
+              rotate: [5, -5, 5, 0],
+            }}
+            whileTap={{
+              scale: 1.1,
+              rotate: [5, -5, 5, 0],
+            }}
+            whileFocus={{
+              scale: 1.1,
+              rotate: [5, -5, 5, 0],
+            }}
+            animate={{
+              rotate: 0,
+            }}
+            className="p-4"
+          >
+            <div className="mt-5 ">
+              <motion.div
+               
+                transition={{
+                  layout: {
+                    type: "spring",
+                    duration: 0.5,
+                  },
+                }}
+                className=" cursor-pointer"
+              >
+                <Image className="lg:w-[100%] md:w-[100%] sm:w-[100%] rounded-t-md"
+                sizes="(min-width:768px) 80vw (min-width:200px)90vw  (min-width:1000px) 100vw"
+                alt="pf5" src="/pf9.png" width="500" height="200"/>
+               
+              </motion.div>
+
+             
+
+
+             <div className="bg-slate-200 rounded-b-md p-5 lg:min-h-[230px]">
+              <section className="">
+              <h1 className="font-bold "> Lookscout</h1>   
+          <p> 
+          (Mental Wellness Site/User Platform)</p>
+              </section>
+         
+
+             <h1 className="font-bold">Stack</h1>
+              <div className="flex flex-wrap font-mono font-light rounded-b-lg drop-shadow-xl  lg:justify-start md:justify-evenly sm:justify-start sm:gap-3   ">
+                
+               <p className="border-slate-700 rounded p-2 border-spacing-2 border"> Next js</p>
+               <p className="border-slate-700 rounded p-2 border-spacing-2 border"> Typescript </p>
+               <p className="border-slate-700 rounded p-2 border-spacing-2 border"> Tailwind</p>
+               <p className="border-slate-700 rounded p-2 border-spacing-2 border"> Material UI</p>
+              
+              </div>
+             </div>
+             
+            </div>
+          </motion.section>
+          </Link>
 
 <Link href="https://main--calm-smakager-8b94b3.netlify.app/" target="_blank" >  
           <motion.section
