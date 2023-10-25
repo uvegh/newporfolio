@@ -162,7 +162,7 @@ export default function Home() {
           Contact
         </Navbar.Link>
 
-        <Navbar.Link href="public/cv.pdf" target="_blank">
+        <Navbar.Link href="https://docs.google.com/document/d/1-lN2CInFhmt0IUtGn0Fmy0yPk8vhpIRlCrpjA9UACA4/edit?usp=sharing" target="_blank">
           Resume
         </Navbar.Link>
       </Navbar.Collapse>
@@ -1878,23 +1878,7 @@ className="mt-10 mb-10"
       </section>
 
       <section className="sm:mx-auto sm:w-[90%] sm:gap-5 md:gap-5" id="experience">
-      <motion.div 
-        initial={{x:-100,opacity:0}}
-        transition={{delay:0.2,duration:0.5}}
-        whileInView={{
-          x:0,
-          opacity:1
-        
-        }}
-        viewport={{once:true}}
-        animate={{
-          x:0
-        }}
-className="mt-10 mb-10"
-        >
-        <p className="font-light text-left font-mono text-xl ">CAREER PATH</p>
-        <h1 className="text-left font-bold text-2xl opacity-50">wORK eXPERIENCE</h1>
-        </motion.div>
+      
 
 <motion.main className="flex font-mono lg:flex-row sm:flex-col  sm:max-md:gap-y-8 lg:gap-3"
 initial={{
@@ -1936,7 +1920,72 @@ March 2021 -August 2023 </p>
 
 </motion.main>
 
+
+
+      </section>
+
+
+      <section className="sm:mx-auto sm:w-[90%] sm:gap-5 md:gap-5" id="experience">
+      <motion.div 
+        initial={{x:-100,opacity:0}}
+        transition={{delay:0.2,duration:0.5}}
+        whileInView={{
+          x:0,
+          opacity:1
         
+        }}
+        viewport={{once:true}}
+        animate={{
+          x:0
+        }}
+className="mt-10 mb-10"
+        >
+        {/* <p className="font-light text-left font-mono text-xl ">CAREER PATH</p>
+        <h1 className="text-left font-bold text-2xl opacity-50">wORK eXPERIENCE</h1> */}
+        </motion.div>
+
+<motion.main className="flex font-mono lg:flex-row sm:flex-col  sm:max-md:gap-y-8 lg:gap-3"
+initial={{
+  opacity:0,
+  scale:0,
+  x:100
+}}
+whileInView={{
+  scale:1,
+  opacity:1,
+  x:0
+}}
+transition={{
+  delay:0.2,
+  duration:0.3
+}}
+>
+  <div className="lg:w-[75%]">
+    <Image className="rounded-md"  alt="rework" src="/couch.svg" width="400" height="100"
+    sizes="(min-width:768px) 90vw (min-width:200px) 90vw 22vw "
+    />
+
+  </div>
+
+<div>
+  <p className="font-bold text-xl">Front-end Software Developer</p>
+  <p className="sm:max-md:text-lg">
+  August 2023 </p>
+<p>Couch Technologies  is an indigenous company that provides individuals access to mental wellness treatment,connects patients with therapists ..</p>
+<p className="text-slate-700 flex"><GrLocationPin/> Fct-Abuja Nigeria</p>
+<div>
+
+</div>
+<div className="group px-2 py-3 bg-slate-600 rounded-md mt-2 lg:w-[45%]  cursor-pointer hover:translate-x-7 duration-100 transition-all ease-in-out">
+<Link href=""   className="">Learn more about Rework Technology</Link>
+</div>
+
+</div>
+
+</motion.main>
+
+
+
       </section>
 
       <section className="sm:mx-auto sm:w-[90%] sm:gap-5 md:gap-5 " id="contact">
@@ -2094,3 +2143,5 @@ target="blank"
 
   );
 }
+
+
