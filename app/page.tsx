@@ -162,7 +162,7 @@ export default function Home() {
           Contact
         </Navbar.Link>
 
-        <Navbar.Link href="https://docs.google.com/document/d/1-lN2CInFhmt0IUtGn0Fmy0yPk8vhpIRlCrpjA9UACA4/edit?usp=sharing" target="_blank">
+        <Navbar.Link href="https://amber-charlot-64.tiiny.site/" target="_blank">
           Resume
         </Navbar.Link>
       </Navbar.Collapse>
@@ -2129,7 +2129,7 @@ transition={{
 
 </div>
 <div className="group px-2 py-3 bg-slate-600 rounded-md mt-2 lg:w-[45%]  cursor-pointer hover:translate-x-7 duration-100 transition-all ease-in-out">
-<Link href=""   className="">Learn more about Rework Technology</Link>
+<Link href="https://www.joincouch.co/landing"   className="">Learn more about couch Technology</Link>
 </div>
 
 </div>
@@ -2283,7 +2283,7 @@ target="blank"
     <div className="">
         <div className="col-md-12">
            
-            <p className="text-center ">Copyright ©2023 centeDev 
+            <p className="text-center ">Copyright ©2024 centeDev 
     
         - Design </p>
         </div>
