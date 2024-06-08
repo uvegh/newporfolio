@@ -215,7 +215,7 @@ export default function Home() {
             Eghobamien <span style={{ color: "#7e74f1" }}>Vincent</span>
           </h1>
           <p className="text-start   font-thin font-mono mt-5 text-md lg:w-[90%] ">
-            I have over a year of experience as a fullstack MERN developer,
+            I have over 2 year of experience as a fullstack MERN developer,
             proficient in Mongo, Express, React, NextJS and Node.js. I
             specialize in front-end development using Next Js, React, TypeScript
             and I am skilled in JavaScript, HTML, CSS,Tailwind and Bootstrap. I
@@ -399,7 +399,7 @@ export default function Home() {
 className="mt-10 mb-10"
         >
         <p className="font-light text-left font-mono text-xl ">MY LANGUAGES</p>
-        <h1 className="text-left font-bold text-2xl opacity-50">i sPEAK</h1>
+        <h1 className="text-left font-bold text-2xl opacity-50">I SPEAK</h1>
         </motion.div>
      
 
@@ -1187,7 +1187,7 @@ className="mt-10 mb-10"
 className="mt-10 mb-10"
         >
         <p className="font-light text-left font-mono text-xl ">MY WORKS</p>
-        <h1 className="text-left font-bold text-2xl opacity-50">fEATURED pORTFOLIO</h1>
+        <h1 className="text-left font-bold text-2xl opacity-50">FEATURED PORTFOLIO</h1>
         </motion.div>
      
 
@@ -1205,6 +1205,156 @@ className="mt-10 mb-10"
         }}
         className="grid  lg:grid-cols-3 md:grid-cols-1 text-slate-800  pb-10">
 
+
+<Link href="https://vgogram.vercel.app/user/home" target="_blank" >  
+          <motion.section
+            initial={{ opacity: 0, scale: 0, x: 100 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              layout: {
+                type: "spring",
+              },
+              duration: 0.4,
+              delay:0.2
+              
+            }}
+
+            whileHover={{
+              scale: 1.1,
+              rotate: [5, -5, 5, 0],
+            }}
+            whileTap={{
+              scale: 1.1,
+              rotate: [5, -5, 5, 0],
+            }}
+            whileFocus={{
+              scale: 1.1,
+              rotate: [5, -5, 5, 0],
+            }}
+            animate={{
+              rotate: 0,
+            }}
+            className="p-4"
+          >
+            <div className="mt-5 ">
+              <motion.div
+               
+                transition={{
+                  layout: {
+                    type: "spring",
+                    duration: 0.5,
+                  },
+                }}
+                className=" cursor-pointer"
+              >
+                <Image className="lg:w-[100%] md:w-[100%] sm:w-[100%] rounded-t-md"
+                sizes="(min-width:768px) 80vw (min-width:200px)90vw  (min-width:1000px) 100vw"
+                alt="pf5" src="/pf10.png" width="500" height="200"/>
+               
+              </motion.div>
+
+             
+
+
+             <div className="bg-slate-200 rounded-b-md p-5 lg:min-h-[230px]">
+              <section className="">
+              <h1 className="font-bold "> vgogram</h1>   
+          <p> 
+(Job Finding Platform)</p>
+              </section>
+         
+
+             <h1 className="font-bold">Stack</h1>
+              <div className="flex flex-wrap font-mono font-light rounded-b-lg drop-shadow-xl  lg:justify-start md:justify-evenly sm:justify-start sm:gap-3   ">
+                
+               <p className="border-slate-700 rounded p-2 border-spacing-2 border"> Next js</p>
+               <p className="border-slate-700 rounded p-2 border-spacing-2 border"> Typescript </p>
+               <p className="border-slate-700 rounded p-2 border-spacing-2 border"> Tailwind</p>
+               <p className="border-slate-700 rounded p-2 border-spacing-2 border"> GraphQL</p>
+               <p className="border-slate-700 rounded p-2 border-spacing-2 border"> Mongo</p>
+              </div>
+             </div>
+             
+            </div>
+          </motion.section>
+          </Link>
+
+
+          <Link href="https://vgogram-e.vercel.app/employer/home" target="_blank" >  
+          <motion.section
+            initial={{ opacity: 0, scale: 0, x: 100 }}
+            whileInView={{ opacity: 1, scale: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              layout: {
+                type: "spring",
+              },
+              duration: 0.4,
+              delay:0.2
+              
+            }}
+
+            whileHover={{
+              scale: 1.1,
+              rotate: [5, -5, 5, 0],
+            }}
+            whileTap={{
+              scale: 1.1,
+              rotate: [5, -5, 5, 0],
+            }}
+            whileFocus={{
+              scale: 1.1,
+              rotate: [5, -5, 5, 0],
+            }}
+            animate={{
+              rotate: 0,
+            }}
+            className="p-4"
+          >
+            <div className="mt-5 ">
+              <motion.div
+               
+                transition={{
+                  layout: {
+                    type: "spring",
+                    duration: 0.5,
+                  },
+                }}
+                className=" cursor-pointer"
+              >
+                <Image className="lg:w-[100%] md:w-[100%] sm:w-[100%] rounded-t-md"
+                sizes="(min-width:768px) 80vw (min-width:200px)90vw  (min-width:1000px) 100vw"
+                alt="pf11" src="/pf11.png" width="500" height="200"/>
+               
+              </motion.div>
+
+             
+
+
+             <div className="bg-slate-200 rounded-b-md p-5 lg:min-h-[230px]">
+              <section className="">
+              <h1 className="font-bold "> vgogram-employer</h1>   
+          <p> 
+(Talent Recruitment Platform)</p>
+              </section>
+         
+
+             <h1 className="font-bold">Stack</h1>
+              <div className="flex flex-wrap font-mono font-light rounded-b-lg drop-shadow-xl  lg:justify-start md:justify-evenly sm:justify-start sm:gap-3   ">
+                
+              <p className="border-slate-700 rounded p-2 border-spacing-2 border"> Next js</p>
+               <p className="border-slate-700 rounded p-2 border-spacing-2 border"> Typescript </p>
+               <p className="border-slate-700 rounded p-2 border-spacing-2 border"> Tailwind</p>
+               <p className="border-slate-700 rounded p-2 border-spacing-2 border"> GraphQL</p>
+               <p className="border-slate-700 rounded p-2 border-spacing-2 border"> Mongo</p>
+              
+              </div>
+             </div>
+             
+            </div>
+          </motion.section>
+          </Link>
 
 {/* user */}
 
@@ -1357,6 +1507,8 @@ className="mt-10 mb-10"
             </div>
           </motion.section>
           </Link>
+
+
 
 <Link href="https://main--calm-smakager-8b94b3.netlify.app/" target="_blank" >  
           <motion.section
@@ -2004,7 +2156,7 @@ transition={{
 className="mt-10 mb-10"
         >
         <p className="font-light text-left font-mono text-xl ">Contact </p>
-        <h1 className="text-left font-bold sm:max-md:text-xl text-2xl opacity-50">cONNECT wITH mE..</h1>
+        <h1 className="text-left font-bold sm:max-md:text-xl text-2xl opacity-50">CONNECT WITH ME..</h1>
         </motion.div>
 
 <motion.main className="flex font-mono lg:flex-row text-2xl  sm:justify-center justify-center  gap-5"
