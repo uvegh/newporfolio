@@ -21,8 +21,8 @@ export default function Home() {
     <>
      {/* <Header/> */}
      {/* <!-- component --> */}
-<nav className="bg-gray-200 shadow shadow-gray-300 w-100 px-8 md:px-auto">
-	<div className="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
+<nav className="bg-gray-200 shadow shadow-gray-300 fixed w-full  px-8 md:px-auto">
+	<div className="md:h-16 h-28 mx-auto md:px-4 md:container flex items-center justify-between flex-wrap md:flex-nowrap">
 		{/* <!-- Logo --> */}
 		<div className="text-indigo-500 md:order-1">
 			{/* <!-- Heroicon - Chip Outline --> */}
