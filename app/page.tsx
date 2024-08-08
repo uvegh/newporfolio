@@ -4,118 +4,22 @@ import Link from "next/link";
 
 import { BsArrow90DegRight, BsArrowRightShort, BsInstagram, BsStack } from "react-icons/bs"
 import { FaEnvelope, FaFacebookF, FaPhone, FaTwitter } from "react-icons/fa"
-import { FaGithub } from "react-icons/fa";
+
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillGithub,AiOutlineMail } from "react-icons/ai";
 import { TbBrandTwitter } from "react-icons/tb";
 import {GrLocationPin} from "react-icons/gr"
-import { Navbar } from "flowbite-react";
 
 
 import { motion, AnimatePresence, useScroll } from "framer-motion";
-import { Header } from "./components/Header";
+import Header from "./components/Header";
+
 
 export default function Home() {
   const {scrollYProgress}=useScroll()
   return (
     <>
-     {/* <Header/> */}
-     {/* <!-- component --> */}
-<nav className="bg-gray-200 shadow shadow-gray-300 fixed w-full  px-8 md:px-auto">
-	<div className="md:h-16 h-28 mx-auto md:px-4 md:container flex items-center justify-between flex-wrap md:flex-nowrap">
-		{/* <!-- Logo --> */}
-		<div className="text-indigo-500 md:order-1">
-			{/* <!-- Heroicon - Chip Outline --> */}
-			<svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24"
-				stroke="currentColor">
-				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-					d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-			</svg>
-		</div>
-		<div className="text-gray-500 order-3 w-full md:w-auto md:order-2">
-			<ul className="flex font-semibold justify-between">
-                {/* <!-- Active Link = text-indigo-500
-                Inactive Link = hover:text-indigo-500 --> */}
-				{/* <li className="md:px-4 md:py-2 text-indigo-500"><a href="#">Dashboard</a></li> */}
-				<li className="md:px-4 md:py-2 hover:text-indigo-400"><a  href="#services">Services</a></li>
-				<li className="md:px-4 md:py-2 hover:text-indigo-400"><a href="#portfolio">Explore</a></li>
-				<li className="md:px-4 md:py-2 hover:text-indigo-400"><a href="#about">About</a></li>
-				<li className="md:px-4 md:py-2 hover:text-indigo-400"><a href="#contact">Contact</a></li>
-			</ul>
-		</div>
-		<div className="order-2 md:order-3">
-			<Link
-      href="https://amber-charlot-64.tiiny.site/" target="_blank"
-      className="px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-gray-50 rounded-xl flex items-center gap-2">
-                 {/* Heroicons - Login Solid  */}
-      
-                <span>Resume</span>
-                | <BsArrowRightShort className="text-xl"/> 
-            </Link>
-		</div>
-	</div>
-</nav>
-    {/* <Navbar
-      fluid
-    className="w-full dark:bg-gray-900 top-0 fixed mb-13 z-10"
-    >
-      <div className="lg:w-[90%]md:w-[100%] sm:w-[100%] flex flex-wrap  justify-between mx-auto p-4">
-      <Navbar.Brand
-      
-        href=""
-      >
-       
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-          
-        </span>
-      </Navbar.Brand>
 
-      <Navbar.Toggle  />
-      <Navbar.Collapse >
-        <Navbar.Link
-          active
-          href="#services"
-        >
-          <p>
-            Services
-          </p>
-        </Navbar.Link>
-        <Navbar.Link href="#about"
-        >
-          <p>
-            About
-          </p>
-        </Navbar.Link>
-        <Navbar.Link href="#portfolio">
-          Portfolio
-        </Navbar.Link>
-      
-        <Navbar.Link href="#contact">
-          Contact
-        </Navbar.Link>
-
-        <Navbar.Link href="https://amber-charlot-64.tiiny.site/" target="_blank">
-          Resume
-        </Navbar.Link>
-      </Navbar.Collapse>
-      </div>
-     
-      <motion.div className="bg-blue left-0 fixed  bg-slate-400 p-0.5 sm:max-md:hidden"
-    style={{
-      scaleX:scrollYProgress,
-      transformOrigin:"0%",
-      position:"fixed",
-    top:"8%",
-      right:0,
-      left:0,
-      height:1
-       
-    }}
-    >
-
-        
-    </motion.div>
-    </Navbar> */}
     <main className=" md:max-lg:container mx-auto">
 
    
@@ -123,7 +27,7 @@ export default function Home() {
 
 
       
-      <section className="flex sm:mt-12  sm:flex-col sm:gap-5 md:gap-5 md:flex-col lg:flex-row mt-10 justify-between lg:gap-5 sm:mx-auto sm:w-[90%] md:max-lg:w-[80%] md:mx-auto" id="about">
+      <section className="flex  sm:flex-col sm:gap-5 md:gap-5 md:flex-col lg:flex-row pt-28 justify-between lg:gap-5  sm:w-[90%] md:max-lg:w-[80%] md:mx-auto" id="about">
         <motion.div
           initial={{
             x:-10,
