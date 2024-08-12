@@ -5,7 +5,7 @@ const Header=()=>{
 
 
   return(
-    <nav className="bg-gray-200 shadow shadow-gray-300 text-gray-200 fixed w-full  px-8 md:px-auto">
+    <nav className="bg-gray-200 shadow shadow-gray-300 text-gray-200 fixed w-full  px-8 md:px-auto z-10">
 	<div className="md:h-16 h-28 mx-auto md:px-4 md:container flex items-center justify-between flex-wrap md:flex-nowrap">
 		{/* <!-- Logo --> */}
 		<div className="text-indigo-500 md:order-1">
@@ -17,7 +17,7 @@ const Header=()=>{
 			</svg>
 		</div>
 		<div className="text-gray-500 order-3 w-full md:w-auto md:order-2">
-			<ul className="flex font-semibold justify-between">
+			<ul className="flex font-semibold justify-between max-md:text-sm">
                 {/* <!-- Active Link = text-indigo-500
                 Inactive Link = hover:text-indigo-500 --> */}
 				{/* <li className="md:px-4 md:py-2 text-indigo-500"><a href="#">Dashboard</a></li> */}

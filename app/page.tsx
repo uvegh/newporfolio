@@ -46,7 +46,7 @@ export default function Home() {
             opacity: 1,
             scale: 1,
           }}
-          className="lg:w-1/2 mt-5"
+          className="lg:w-1/2 mt-5 max-md:ms-5"
         >
           MY NAME IS
           <h1 className="text-3xl font-bold mt-5">
@@ -898,7 +898,7 @@ className="mt-10 mb-10"
               </h3>
               <p className="my-auto mt-2 lg:text-center md:text-center font-mono md:mx-auto font-light md:max-lg:w-[90%] sm:w-[95%] sm:mx-auto sm:pb-5">
                 Standard designing, building, and implementing your applications
-                with MERN(Mongo Express React Js) Stack.
+                with MERN(Mongo Express React/Next Js) Stack.Firebase and NoSql Dbs.Experieince with backend frameworks sucjh as Nestjs
               </p>
             </div>
           </motion.section>
@@ -1000,7 +1000,7 @@ className="mt-10 mb-10"
               Front End Development
               </h3>
               <p className="my-auto mt-2 lg:text-center md:text-center font-mono md:mx-auto font-light md:max-lg:w-[90%]sm:mx-auto sm:pb-5 sm:w-[95%]">
-              Creating engaging user interfaces using technologies such as Nextjs, React,Bootstrap and Tailwind ensuring seamless interaction and intuitive user experiences.
+              Creating engaging user interfaces using technologies such as Nextjs, React,component based UIs Material UI,Mantine UI etc Bootstrap and Tailwind ensuring seamless interaction and intuitive user experiences.
               </p>
             </div>
           </motion.section>
