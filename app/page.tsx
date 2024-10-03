@@ -30,7 +30,7 @@ export default function Home() {
       <section className="flex  sm:flex-col sm:gap-5 md:gap-5 md:flex-col lg:flex-row pt-28 justify-between lg:gap-5  sm:w-[90%] md:max-lg:w-[80%] md:mx-auto" id="about">
         <motion.div
           initial={{
-            x:-10,
+            x:"-100%",
            
             
           }}
@@ -39,8 +39,9 @@ export default function Home() {
             opacity: 1,
           }}
           transition={{
-            delay: 0.3,
+            delay: 0.2,
             duration: 0.3,
+            type:"spring"
           }}
           whileInView={{
             opacity: 1,
@@ -54,7 +55,7 @@ export default function Home() {
           </h1>
           <p className="text-start   font-thin font-mono mt-5 text-md lg:w-[90%] ">
           Fullstack Developer with 3 years  of technical experience in building seamless user friendly applications,
-            proficient in Mongo, Express,Nestjs,Docker React, NextJS and Node.js. I
+            proficient in PostgreSQL,Mongo, Express,Nestjs,Docker React, NextJS and Node.js. I
             specialize in front-end development using Next Js, React, TypeScript
             and I am skilled in JavaScript, HTML, CSS,Tailwind and Bootstrap. I
             am passionate about expanding my knowledge and constantly seeking
@@ -65,15 +66,15 @@ export default function Home() {
           <motion.footer
             initial={{
              
-              x:-10,
+              x:"-100%",
             }}
             whileInView={{
               opacity: 1,
               x: 0,
             }}
             transition={{
-              delay: 1,
-              duration: 0.6,
+              delay: 0.4,
+              duration: 0.2,
             }}
             animate={{
               x: 0,
@@ -83,15 +84,15 @@ export default function Home() {
           >
             <motion.a
               whileHover={{
-                scale: 1.3,
+                scale: 1.1,
                 rotate: [10, -10, 10, 0],
               }}
               whileTap={{
-                scale: 1.3,
+                scale: 1.1,
                 rotate: [10, -10, 10, 0],
               }}
               whileFocus={{
-                scale: 1.3,
+                scale: 1.1,
                 rotate: [10, -10, 10, 0],
               }}
               animate={{
@@ -110,15 +111,15 @@ export default function Home() {
             </motion.a>
             <motion.a
               whileHover={{
-                scale: 1.3,
+                scale: 1.1,
                 rotate: [10, -10, 10, 0],
               }}
               whileTap={{
-                scale: 1.3,
+                scale: 1.1,
                 rotate: [10, -10, 10, 0],
               }}
               whileFocus={{
-                scale: 1.3,
+                scale: 1.1,
                 rotate: [10, -10, 10, 0],
               }}
               animate={{
@@ -138,15 +139,15 @@ export default function Home() {
             </motion.a>{" "}
             <motion.a
               whileHover={{
-                scale: 1.3,
+                scale: 1.1,
                 rotate: [10, -10, 10, 0],
               }}
               whileTap={{
-                scale: 1.3,
+                scale: 1.1,
                 rotate: [10, -10, 10, 0],
               }}
               whileFocus={{
-                scale: 1.3,
+                scale: 1.1,
                 rotate: [10, -10, 10, 0],
               }}
               animate={{
@@ -166,15 +167,15 @@ export default function Home() {
             </motion.a>{" "}
             <motion.a
               whileHover={{
-                scale: 1.3,
+                scale: 1.1,
                 rotate: [10, -10, 10, 0],
               }}
               whileTap={{
-                scale: 1.3,
+                scale: 1.1,
                 rotate: [10, -10, 10, 0],
               }}
               whileFocus={{
-                scale: 1.3,
+                scale: 1.1,
                 rotate: [10, -10, 10, 0],
               }}
               animate={{
@@ -187,7 +188,8 @@ export default function Home() {
                 },
               }}
               layout
-              href=""
+          target="blank"    
+              href="https://x.com/centeDev"
             >
               <TbBrandTwitter />
             </motion.a>
@@ -195,12 +197,12 @@ export default function Home() {
         </motion.div>
         <motion.div
           initial={{
-            x: -10,
+            x: "-100%",
            
-            scale: 0,
+         
           }}
           whileInView={{
-            opacity: 1,
+        
             scale: 1,
             x: 0,
           }}
@@ -223,8 +225,8 @@ export default function Home() {
 
       <section className="mt-5 font-mono font-light sm:mx-auto sm:w-[90%] md:max-lg:w-[80%] md:mx-auto" id="language">
         <motion.div 
-        initial={{x:-10,opacity:0}}
-        transition={{delay:0.2,duration:0.5}}
+        initial={{x:-"-100",opacity:0}}
+        transition={{delay:0.2,duration:0.3}}
         whileInView={{
           x:0,
           opacity:1
@@ -236,8 +238,8 @@ export default function Home() {
         }}
 className="mt-10 mb-10"
         >
-        <p className="font-light text-left font-mono text-xl ">MY LANGUAGES</p>
-        <h1 className="text-left font-bold text-2xl opacity-50">I SPEAK</h1>
+        <p className="font-light text-left font-mono text-xl "> LANGUAGES</p>
+        <h1 className="text-left font-bold text-2xl opacity-50">& TECHNOLOGIES</h1>
         </motion.div>
      
 
@@ -248,7 +250,8 @@ className="mt-10 mb-10"
           opacity:1
         }}
         transition={{
-          duration:0.2
+          duration:0.2,
+          type:"spring"
         }}
         whileInView={{
           opacity:1
@@ -258,7 +261,7 @@ className="mt-10 mb-10"
 
 
           <motion.section
-            initial={{ scale: 0, x:-10 }}
+            initial={{ scale: 0, x:"-100%"}}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{
@@ -313,14 +316,14 @@ className="mt-10 mb-10"
           </motion.section>
           
           <motion.section
-            initial={{ scale: 0, x:-10 }}
+            initial={{ scale: 0, x:"-100%" }}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{
               layout: {
                 type: "spring",
               },
-              duration: 0.4,
+              duration: 0.3,
               delay:0.2
               
             }}
@@ -369,7 +372,7 @@ className="mt-10 mb-10"
 
 
           <motion.section
-            initial={{ scale: 0, x:-10 }}
+            initial={{ scale: 0, x:"-100%"}}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{
@@ -425,7 +428,7 @@ className="mt-10 mb-10"
 
 
           <motion.section
-            initial={{  x:-10 }}
+            initial={{  x:"-100%"}}
             whileInView={{ opacity: 1,  x: 0 }}
             viewport={{ once: true }}
             transition={{
@@ -481,7 +484,7 @@ className="mt-10 mb-10"
 
 
           <motion.section
-            initial={{  x:-10 }}
+            initial={{  x:"-100%"}}
             whileInView={{ opacity: 1,  x: 0 }}
             viewport={{ once: true }}
             transition={{
@@ -537,7 +540,7 @@ className="mt-10 mb-10"
 
 
           <motion.section
-            initial={{  x:-10 }}
+            initial={{  x:"-100%"}}
             whileInView={{ opacity: 1,  x: 0 }}
             viewport={{ once: true }}
             transition={{
@@ -592,7 +595,7 @@ className="mt-10 mb-10"
           </motion.section>
 
           <motion.section
-            initial={{  x:-10 }}
+            initial={{  x:"-100%"}}
             whileInView={{ opacity: 1,  x: 0 }}
             viewport={{ once: true }}
             transition={{
@@ -647,7 +650,7 @@ className="mt-10 mb-10"
           </motion.section>
 
           <motion.section
-            initial={{  x:-10 }}
+            initial={{  x:"-100%"}}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{
@@ -702,7 +705,7 @@ className="mt-10 mb-10"
           </motion.section>
 
           <motion.section
-            initial={{  x:-10 }}
+            initial={{  x:"-100%"}}
             whileInView={{ opacity: 1,  x: 0 }}
             viewport={{ once: true }}
             transition={{
@@ -757,7 +760,7 @@ className="mt-10 mb-10"
           </motion.section>
 
           <motion.section
-            initial={{  x:-10 }}
+            initial={{  x:"-100%"}}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{
@@ -811,6 +814,60 @@ className="mt-10 mb-10"
             </div>
           </motion.section>
 
+          <motion.section
+            initial={{  x:"-100%"}}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              layout: {
+                type: "spring",
+              },
+              duration: 0.4,
+              delay:0.2
+              
+            }}
+
+            whileHover={{
+              scale: 1.1,
+              rotate: [5, -5, 5, 0],
+            }}
+            whileTap={{
+              scale: 1.1,
+              rotate: [5, -5, 5, 0],
+            }}
+            whileFocus={{
+              scale: 1.1,
+              rotate: [5, -5, 5, 0],
+            }}
+            animate={{
+              rotate: 0,
+            }}
+            className="p-4"
+          >
+            <div className="mt-5 ">
+              <motion.div
+               
+                transition={{
+                  layout: {
+                    type: "spring",
+                    duration: 0.5,
+                  },
+                }}
+                className=" cursor-pointer"
+              >
+                <Image className="lg:w-[100%] md:w-[100%] sm:w-[100%]  rounded-md"
+                sizes="(min-width:768px) 80vw (min-width:200px)90vw  (min-width:1000px) 100vw"
+                alt="pf7" src="/lg11.png" width="50" height="30"/>
+               
+              </motion.div>
+
+             
+
+
+             
+             
+            </div>
+          </motion.section>
          
         </motion.div>
       </section>
@@ -867,15 +924,15 @@ className="mt-10 mb-10"
             <div className="mt-5 ">
               <motion.div
                 whileHover={{
-                  scale: 1.3,
+                  scale: 1.1,
                   rotate: [10, -10, 10, 0],
                 }}
                 whileTap={{
-                  scale: 1.3,
+                  scale: 1.1,
                   rotate: [10, -10, 10, 0],
                 }}
                 whileFocus={{
-                  scale: 1.3,
+                  scale: 1.1,
                   rotate: [10, -10, 10, 0],
                 }}
                 animate={{
@@ -919,15 +976,15 @@ className="mt-10 mb-10"
             <div className="mt-5 ">
               <motion.div
                 whileHover={{
-                  scale: 1.3,
+                  scale: 1.1,
                   rotate: [10, -10, 10, 0],
                 }}
                 whileTap={{
-                  scale: 1.3,
+                  scale: 1.1,
                   rotate: [10, -10, 10, 0],
                 }}
                 whileFocus={{
-                  scale: 1.3,
+                  scale: 1.1,
                   rotate: [10, -10, 10, 0],
                 }}
                 animate={{
@@ -970,15 +1027,15 @@ className="mt-10 mb-10"
             <div className="mt-5 ">
               <motion.div
                 whileHover={{
-                  scale: 1.3,
+                  scale: 1.1,
                   rotate: [10, -10, 10, 0],
                 }}
                 whileTap={{
-                  scale: 1.3,
+                  scale: 1.1,
                   rotate: [10, -10, 10, 0],
                 }}
                 whileFocus={{
-                  scale: 1.3,
+                  scale: 1.1,
                   rotate: [10, -10, 10, 0],
                 }}
                 animate={{
@@ -1573,7 +1630,7 @@ className="mt-10 mb-10"
 
           <Link href="https://gavohms.netlify.app/" target="_blank"> 
           <motion.section
-            initial={{ scale: 0, x:-10 }}
+            initial={{ scale: 0, x:"-100%"}}
             whileInView={{ opacity: 1, scale: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{
@@ -2027,11 +2084,11 @@ transition={{
     delay:0.3
   }}
   whileHover={{
-    scale:1.3,
+    scale:1.1,
     rotate:[5,-5,0]
   }}
   whileTap={{
-    scale:1.3,
+    scale:1.1,
     rotate:[5,-5,0]
   }}
   animate={{
@@ -2056,11 +2113,11 @@ transition={{
   delay:0.2
 }}
 whileHover={{
-  scale:1.3,
+  scale:1.1,
   rotate:[5,-5,0]
 }}
 whileTap={{
-  scale:1.3,
+  scale:1.1,
   rotate:[5,-5,0]
 }}
 
@@ -2089,11 +2146,11 @@ transition={{
   delay:0.1
 }}
 whileHover={{
-  scale:1.3,
+  scale:1.1,
   rotate:[5,-5,0]
 }}
 whileTap={{
-  scale:1.3,
+  scale:1.1,
   rotate:[5,-5,0]
 }} 
 animate={{
